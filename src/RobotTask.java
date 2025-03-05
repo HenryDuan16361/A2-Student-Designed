@@ -16,8 +16,8 @@ public class RobotTask implements Runnable {
 
 		rob.print_one();
 		rob.print_eight();
-		rob.print_five();
-		rob.print_seven();
+		rob.print_nine();
+		rob.print_zero();
 
 
 

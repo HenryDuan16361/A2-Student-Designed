@@ -48,6 +48,10 @@ public class Minute extends Clock{
                 print_seven();
                 break;  
 
+            case 8:
+                print_eight();
+                break;  
+
         }
 
         switch (second_digit) {
