@@ -1,12 +1,10 @@
 import java.time.LocalDateTime;
-
 import becker.robots.City;
 import becker.robots.Direction;
 
 
-
-public class Minute extends Clock{
-    Minute(City city, int street, int avenue, Direction direction, int things){
+public class Hour extends Clock{
+    Hour(City city, int street, int avenue, Direction direction, int things){
         super(city, street, avenue, direction, things);
     }
 
@@ -15,15 +13,15 @@ public class Minute extends Clock{
     @Override
     public int get_time() {
         LocalDateTime now = LocalDateTime.now();
-        int minute = now.getMinute();
-        return minute;
+        int x = now.getHour();
+        return x;
     }
 
     @Override
     public void print_time(){
-        int minute = get_time();
-        int first_digit = minute / 10;
-        int second_digit = minute % 10;
+        int x = get_time();
+        int first_digit = x / 10;
+        int second_digit = x % 10;
 
         switch(first_digit){
             case 1:
@@ -100,5 +98,6 @@ public class Minute extends Clock{
         }
 
 
-        }
+    }
 }
+

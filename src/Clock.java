@@ -32,6 +32,45 @@ abstract class Clock extends Robot{
 
 
     public abstract int get_time();
+    public abstract void print_time();
+    public void colon(){
+        turn_Right();
+        move(2);
+        putThing();
+        move(2);
+        putThing();
+        move();
+        //relocate
+        turnLeft();
+        move(2);
+        turnLeft();
+        move(5);
+        turn_Right();
+
+    }
+
+    public void slash(){
+        turnLeft();
+        move();
+        turn_Right();
+        move(2);
+        turn_Right();
+        drawLine(3);
+        turn_Right();
+        move();
+        turnLeft();
+        drawLine(3);
+        turn_Right();
+        move(1);
+        turnLeft();
+        drawLine(3);
+        //relocate
+        turnLeft();
+        move(4);
+        turnLeft();
+        move(8);
+        turn_Right();
+    }
 
 
     public void print_one(){
