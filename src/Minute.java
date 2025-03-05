@@ -47,7 +47,7 @@ public class Minute extends Clock{
                 break;
         
             case 2:
-
+                print_two();
                 break;
         }
 
