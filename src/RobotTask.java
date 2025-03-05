@@ -3,15 +3,19 @@
  */
 import becker.robots.*;
 
-public class RobotTask {
+public class RobotTask implements Runnable {
 
 	public void run() {
 
-		// build a random city called waterloo
-		City waterloo = new City(10, 10);
+		City field = new City(10,10);
+		field.showThingCounts(true);
 
 		// build a robot in the city waterloo starting at street 1,1 facing east with 100 things
-		Robot rob = new Robot(waterloo, 1, 1, Direction.EAST, 100);
+		Minute rob = new Minute(field, 1, 1, Direction.EAST, 1000);
+		
+
+		rob.print_one();
+		rob.print_four();
 
 
 
