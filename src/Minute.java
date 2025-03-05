@@ -38,6 +38,15 @@ public class Minute extends Clock{
             case 4: 
                 print_four();
                 break;
+            case 5:
+                print_five();   
+                break;
+            case 6:
+                print_six();
+                break;
+            case 7:
+                print_seven();
+                break;  
 
         }
 
