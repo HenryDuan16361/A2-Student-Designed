@@ -231,9 +231,25 @@ abstract class Clock extends Robot{
         drawLine(3);
         turn_Right();
         move();
-        drawLine(getAvenue());
+        drawLine(2);
+        turn_Right();
+        move();
+        drawLine(3);
+        turn_Right();
+        move();
+        drawLine(2);
+        turn_Around();
+        move(4);
+        drawLine(2);
+        turnLeft();
+        move();
+        drawLine(3);
+        turnLeft();
+        move();
+        drawLine(2);
+        turn_Right();
         //relocate
-        move(6);
+        move(2);
         turnLeft();
         move(3);
         turn_Right();   
